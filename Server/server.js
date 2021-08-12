@@ -4,6 +4,7 @@ const express = require('express');
 const app=express();
 const userRouter=require('./Routes/userRoute')
 const moongose = require('./DB/Index')
+const path = require('path');
 const PORT=process.env.PORT;
 app.use(express.json())
 app.use(express.urlencoded({extended:true}))
